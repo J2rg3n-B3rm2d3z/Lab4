@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Lab4</string>
+    <string name="app_name">Acceso Kotlin</string>
+    <string name="default_description_image">descripcion predeterminada</string>
+    <string name="hUserName">Nombre de usuario</string>
+    <string name="hPassword">Contraseña</string>
+    <string name="strLogin">Iniciar Sesión</string>
+    <string name="strHaveNotAccount">¿No tiene cuenta?</string>
+    <string name="strGetNewAccount">Obtener una nueva cuenta</string>
 </resources>

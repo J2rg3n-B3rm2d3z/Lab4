@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/KiaImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop"
+        android:src="@drawable/logokia"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/default_description_image"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/KiaImage"
+        app:layout_constraintHeight_percent="0.8"
+        android:layout_marginTop="@dimen/generalMargin"
+        android:layout_marginStart="@dimen/generalMargin"
+        android:layout_marginEnd="@dimen/generalMargin">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tvUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hUserName"
+                android:drawablePadding="@dimen/generalMargin"
+                android:drawableStart="@drawable/ic_baseline_account_circle_24"
+                android:gravity="start|center_horizontal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/generalMargin">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hPassword"
+                android:drawablePadding="@dimen/generalMargin"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:gravity="start|center_horizontal"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            android:backgroundTint="@color/design_default_color_error"
+            android:onClick="onClickLogin"
+            android:text="@string/strLogin"
+            app:cornerRadius="@dimen/Corner" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvHaveNotAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/strHaveNotAccount"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="@dimen/sizeText1" />
+
+            <TextView
+                android:id="@+id/tvCreeUna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/Margin"
+                android:layout_toEndOf="@+id/tvHaveNotAccount"
+                android:text="@string/strGetNewAccount"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="@dimen/sizeText1"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

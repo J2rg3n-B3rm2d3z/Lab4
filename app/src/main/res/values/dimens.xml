@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="generalMargin">15dp</dimen>
+    <dimen name="Margin">10dp</dimen>
+    <dimen name="marginTop">50dp</dimen>
+    <dimen name="Corner">10dp</dimen>
+    <dimen name="sizeText1">16sp</dimen>
+</resources>

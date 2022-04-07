@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Login Kotlin</string>
+    <string name="default_description_image">Default description</string>
+    <string name="hUserName">UserName</string>
+    <string name="hPassword">Password</string>
+    <string name="strLogin">Login</string>
+    <string name="strHaveNotAccount">Have you not a account?</string>
+    <string name="strGetNewAccount">Create one here</string>
+</resources>
